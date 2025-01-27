@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- * Bs Icons Link Bağlantı Noktası-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- *Favİcon  Link Bağlantı Noktası-->
+    <link
+      rel="shortcut icon"
+      href="./img/no-text-logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- *Css Link Bağlantı Noktası -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Spotify Clone</title>
+  </head>
+
+  <body>
+    <div class="layout">
+      <!-- Aside Kısmı -->
+      <aside>
+        <figure>
+          <img src="./img/no-text-logo.png" alt="Spotify-logo" />
+          <span>Spotify</span>
+        </figure>
+        <nav>
+          <!-- 1. -->
+          <a href="#">
+            <i class="bi bi-house"></i>
+            <span>Anasayfa</span>
+          </a>
+          <!-- 2. -->
+          <a href="#">
+            <i class="bi bi-search"></i>
+            <span>Arama</span>
+          </a>
+          <!-- 3. -->
+          <a href="#">
+            <i class="bi bi-collection"></i>
+            <span>Kütüphaneler</span>
+          </a>
+          <!-- 4. -->
+          <a href="#">
+            <i class="bi bi-music-note-list"></i>
+            <span>Çalma Listeleri</span>
+          </a>
+          <!-- 5. -->
+          <a href="#">
+            <i class="bi bi-heart"></i>
+            <span>Beğenilen Şarkılar</span>
+          </a>
+        </nav>
+      </aside>
+      <!-- Main Kısmı -->
+      <main>
+        <!-- !Header Kısmı-->
+        <header>
+          <!-- Form Kısmı -->
+          <form>
+            <input type="search" placeholder="Ne Dinlemek İstersin..?" />
+            <button type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <!-- Links Kısmı -->
+          <nav>
+            <span>Premium</span>
+            <span>Destek</span>
+            <span>Oturum Aç</span>
+          </nav>
+        </header>
+        <!-- !Müzik Kısmı -->
+        <section>
+          <!-- Title -->
+          <h2 id="title">Popüler Müzikler</h2>
+          <!-- List -->
+          <div class="list">
+            <!--? Cards -->
+            <!--------------------------------------------------------------------------------------------------->
+            <!-- !1. -->
+            <!-- <div class="card">
+                        <figure> -->
+            <!-- !İmg  -->
+            <!-- <img src="https://i.scdn.co/image/ab67616d0000b273bd8d74b33f8be9a6fef39e54" 
+                            alt="album-image"> -->
+            <!-- !Play Btn -->
+            <!-- <div class="play">
+                                <i class="bi bi-play-fill"></i>
+                             </div>
+                        </figure> -->
+            <!--todo: İnfo -->
+            <!-- <div class="card-info">
+                            <h4>Back to Black</h4>
+                            <h4>Amy Winehouse</h4>
+                         </div>
+                    </div> -->
+            <!-- <------------------------------------------------------------------------------------------------->
+            <!--! 2. -->
+            <!-- <div class="card">
+                        <figure> -->
+            <!-- !İmg  -->
+            <!-- <img src="https://i.scdn.co/image/ab67616d0000b273bd8d74b33f8be9a6fef39e54"  alt="album-image"> -->
+            <!-- !Play Btn -->
+            <!-- <div class="play">
+                                <i class="bi bi-play-fill"></i>
+                             </div>
+                        </figure> -->
+            <!--todo: İnfo -->
+            <!-- <div class="card-info">
+                            <h4>Back to Black</h4>
+                            <h4>Amy Winehouse</h4>
+                         </div>
+                     </div> -->
+            <!-- <------------------------------------------------------------------------------------------------->
+            <!-- !3. -->
+            <!-- <div class="card">
+                        <figure> -->
+            <!-- !İmg  -->
+            <!-- <img src="https://i.scdn.co/image/ab67616d0000b273bd8d74b33f8be9a6fef39e54"
+                            alt="album-image"> -->
+            <!-- !Play Btn -->
+            <!-- <div class="play">
+                                <i class="bi bi-play-fill"></i>
+                             </div>
+                        </figure> -->
+            <!--todo: İnfo -->
+            <!-- <div class="card-info">
+                            <h4>Back to Black</h4>
+                            <h4>Amy Winehouse</h4>
+                         </div>
+                     </div> -->
+            <!-- <------------------------------------------------------------------------------------------------->
+            <!-- !4. -->
+            <!-- <div class="card">
+                        <figure> -->
+            <!-- !İmg  -->
+            <!-- <img src="https://i.scdn.co/image/ab67616d0000b273bd8d74b33f8be9a6fef39e54"
+                            alt="album-image"> -->
+            <!-- !Play Btn -->
+            <!-- <div class="play">
+                                <i class="bi bi-play-fill"></i>
+                             </div>
+                        </figure> -->
+            <!-- todo:İnfo -->
+            <!-- <div class="card-info">
+                            <h4>Back to Black</h4>
+                            <h4>Amy Winehouse</h4>
+                         </div> -->
+            <!-- </div>  -->
+            <!-- <------------------------------------------------------------------------------------------------->
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- todo:Player Kısmı:-->
+    <div class="player">
+      <!-- Info -->
+      <div class="info">
+        <img
+          src="https://i.scdn.co/image/ab67616d0000b273bd8d74b33f8be9a6fef39e54"
+          alt=""
+        />
+        <div>
+          <h5>Amy Winehouse</h5>
+          <p>Back to Black</p>
+        </div>
+      </div>
+
+      <!-- Audio -->
+      <audio
+        src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4e/93/6c/4e936c08-91cf-3917-4d0a-66a0163cc323/mzaf_11060568236847747589.plus.aac.ep.m4a"
+        controls
+      ></audio>
+
+      <!-- Right -->
+      <div class="icons">
+        <i class="bi bi-music-note-list"></i>
+        <i class="bi bi-boombox"></i>
+        <i class="bi bi-pc-display"></i>
+      </div>
+    </div>
+    <!-- *Main-JS Link Bağlantı Noktası -->
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
